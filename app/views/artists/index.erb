@@ -1,0 +1,11 @@
+<form action="/artists/<%=@artist.id%>" method="post">
+
+  <label for="artist_name"> Artist Name </label>
+  <input type="text" name="artist[name]">
+
+  <%@artists.each do |art|%>
+    <%=art.name%>
+  <%end%>
+
+
+</form>
