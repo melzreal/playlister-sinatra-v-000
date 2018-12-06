@@ -1,0 +1,10 @@
+<h1><%=@song.name%></h1>
+<h4>Songs:</h4>
+<ul>
+
+  <%@songs.each do |song|%>
+  <li>
+  <a href="/songs/<%=@song.slug%>"> Name:  <%=song.name%>< </a>
+  </li>
+  <%end%>
+</ul>

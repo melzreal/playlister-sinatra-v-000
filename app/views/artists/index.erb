@@ -1,0 +1,17 @@
+<form action="/artists" method="post">
+
+  <label for="artist_name"> Artist Name </label>
+  <input type="text" name="artist[name]">
+
+  <%Artist.all.each do |artist|%>
+  <li>
+  <a href="/artists/<%= artist.slug %>"> Name: <%= artist.name %> </a>
+  </li>
+  <%end%>
+
+  <label>New Artist Name:</label>
+  <input  type="text" name="artist[name]" id="artist_name"></input>
+
+  <input type="submit" value="Create Artist">
+
+</form>
