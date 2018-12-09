@@ -10,10 +10,12 @@ gem 'thin'
 gem 'shotgun'
 gem 'pry'
 gem 'sinatra-flash', '~> 0.3.0'
+gem 'rack-flash3'
 
 group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
   gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+  gem 'rack-flash3'
 end
